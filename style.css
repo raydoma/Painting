@@ -1,0 +1,108 @@
+.form {
+    background-color: aqua;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.base {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    background: rgb(28, 10, 67);
+    width: 100%;
+    height: 100vh;
+}
+.head {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 40vh;
+    background:rgb(30, 178, 30);
+    border-radius: 50% / 10%;
+    text-indent: .1em;
+  }
+.head:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+  }
+
+.eyecircle {
+    position:absolute;
+    width: 21vmin;
+    height: 21vmin;
+    background: black;
+    border-radius: 50%;
+    right: 61vmin;
+    bottom: 45vmin;
+    box-shadow: -40vmin 0 black;
+}
+.eyes {
+    position:absolute;
+    width: 19vmin;
+    height: 19vmin;
+    background: white;
+    border-radius: 50%;
+    right: 62vmin;
+    top:35vmin;
+    box-shadow: -40vmin 0 white;
+    animation: blink 4s infinite;
+}
+@keyframes blink {
+    0% {transform: scale(1, 0.1);}
+    100% {transform: scale(1, 1);}
+}
+.pupil {
+    position:absolute;
+    width: 1vmin;
+    height: 1vmin;
+    background: black;
+    border-radius: 50%;
+    right: 65vmin;
+    top: 45vmin;
+    box-shadow: -50vmin 0 black;
+}
+
+.mouth{
+    position: absolute;
+    width: 9vmin;
+    height: 4vmin;
+    top: 63vmin;
+    right: 85vmin;
+    border-radius: 50%;
+    background: transparent;
+    border-top: 1vmin solid black;
+}
+
+.ears{
+    position: absolute;
+    width:3vmin;
+    height: 1vmin;
+    top: 11vmin;
+    right: 61vmin;
+    border-top: 23vmin solid black;
+    box-shadow: -58vmin 0 black;
+}
+
+.stitches{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+.stitch{
+    position: relative;
+    width:.5vmin;
+    border-top: 4vmin solid black;
+}
